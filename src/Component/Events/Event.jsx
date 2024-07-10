@@ -27,7 +27,7 @@ const Event = () => {
 <>
 
 <section id="blog_h" className="p_3">
-        <div className="container-xl">
+        <div className="container-xl mt-5">
           <div className="row story_1 text-center mb-4">
             <div className="col-md-12">
               <span className="col_brown icon_dove fs-2">

@@ -648,7 +648,7 @@ a.socialIcon:hover,
 
 /*********************price****************/
 .price_m3 {
-  bottom: 0;
+  top: 40%;
   width: 90%;
   left: 5%;
   bottom: -26%;
@@ -1019,7 +1019,7 @@ a.socialIcon:hover,
     margin-bottom: 0;
   }
   .blog_hm {
-    margin-top: 8px;
+    margin-top: 13rem;
     margin-bottom: 8px;
   }
   .blog_hm2 {
