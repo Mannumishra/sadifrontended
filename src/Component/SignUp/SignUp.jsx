@@ -76,7 +76,7 @@ const SignUp = () => {
     setLoding(true)
     try {
       let res = await axios.post(
-        "http://localhost:8000/api/user",
+        "https://sadibackend.onrender.com/api/user",
         formData
       );
       console.log(res);

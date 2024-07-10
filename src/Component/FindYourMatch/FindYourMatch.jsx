@@ -8,7 +8,7 @@ const FindYourMatch = () => {
 
   const getBride = async () => {
     try {
-      let res = await axios.get("http://localhost:8000/api/user")
+      let res = await axios.get("https://sadibackend.onrender.com/api/user")
       console.log(res)
       setBride(res.data.data)
     } catch (error) {

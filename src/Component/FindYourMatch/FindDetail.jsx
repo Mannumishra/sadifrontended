@@ -8,7 +8,7 @@ const FindDetail = () => {
 
   const getsingleDetails = async () => {
     try {
-      let res = await axios.get("http://localhost:8000/api/user/" + _id)
+      let res = await axios.get("https://sadibackend.onrender.com/api/user/" + _id)
       setDetails(res.data.data)
       console.log(res)
     } catch (error) {

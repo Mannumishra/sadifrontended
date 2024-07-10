@@ -21,7 +21,7 @@ const Homepage = () => {
 
   const getBanner = async () => {
     try {
-      let res = await axios.get("http://localhost:8000/api/banner")
+      let res = await axios.get("https://sadibackend.onrender.com/api/banner")
       console.log(res)
       setBanner(res.data.data)
     } catch (error) {
@@ -33,7 +33,7 @@ const Homepage = () => {
 
   const getBride = async () => {
     try {
-      let res = await axios.get("http://localhost:8000/api/bride")
+      let res = await axios.get("https://sadibackend.onrender.com/api/bride")
       console.log(res)
       setBride(res.data.data)
     } catch (error) {
