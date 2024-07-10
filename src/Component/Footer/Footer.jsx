@@ -24,7 +24,7 @@ const Footer = () => {
                     </a>
                   </h1>
                   <p className="fst-italic">
-                  Welcome to Sitaram Marriage Bureau, your trusted partner in finding the perfect match. Established with the vision to bring happiness and togetherness, we have been dedicated to uniting hearts for over [X] years. Our extensive database and personalized matchmaking services ensure that we cater to the unique preferences and aspirations of individuals seeking their life partners.
+                   "Here love finds the perfect match"
                   </p>
                   <ul className="mb-0">
                     <li>
