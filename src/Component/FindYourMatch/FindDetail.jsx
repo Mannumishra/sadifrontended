@@ -150,7 +150,7 @@ const FindDetail = () => {
                     </div>
                     <div className="col-md-4 mt-5">
                       <div className="event_dt2il">
-                        <h3 className="mb-3">Venue</h3>
+                        <h3 className="mb-3">Address</h3>
                         <p>
                           {details.address}
                         </p>
