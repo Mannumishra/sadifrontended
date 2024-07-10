@@ -33,7 +33,7 @@ const Event = () => {
               <span className="col_brown icon_dove fs-2">
                 <i className="fa fa-dove" />
               </span>
-              <h1 className="font_50">Latest News &amp; Blogs</h1>
+              <h1 className="font_50">Latest Weddings  </h1>
             </div>
           </div>
           <div className="row blog_h1">
