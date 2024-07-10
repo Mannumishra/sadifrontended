@@ -305,6 +305,9 @@ const Homepage = () => {
                   </div>
                 </li>
                 <li className="timeline-inverted">
+                  <div className="timeline-badge " style={{backgroundColor:"#842D60"}}>
+                    <i className="fa fa-heart"></i>
+                  </div>
                   <div className="timeline-panel">
                     <img alt="abc" className="w-100" src={image10} />
                   </div>
@@ -763,7 +766,7 @@ const Homepage = () => {
       {/* wedding package-end */}
 
       {/*Event and  blog */}
-     <Event />
+      <Event />
       {/* blog-end*/}
 
     </>
