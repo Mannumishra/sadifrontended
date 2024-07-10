@@ -1,0 +1,16 @@
+@media (max-width: 600px){
+    .sweetStory{
+      display: none;
+      }
+  }
+  /* .sweetStory{
+    display: block;
+  } */
+  .rounded-circle{
+    transition: all 1s ease-in-out;
+
+  }
+   .rounded-circle:hover{
+    background-color: brown;
+    transition: all 1s ease-in-out;
+   }

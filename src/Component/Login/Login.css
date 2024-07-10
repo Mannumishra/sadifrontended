@@ -1,0 +1,16 @@
+.formouter{
+    max-width: 40%;
+    margin: auto;
+    border: 1px solid brown;
+    padding: 2rem;
+}
+.loginform{
+    width: 100%;
+    padding: 5px;
+    border-radius: 21px;
+    background-color: white;
+    border: 1px solid #ee0b42;
+    color: #ee0b42;
+    font-size: 20px;
+    
+}
