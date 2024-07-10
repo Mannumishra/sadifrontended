@@ -699,19 +699,23 @@ const Homepage = () => {
                   <div className="price_2i text-center shadow_box p-4 bg-white">
                     <h5 className="fw-normal">BASIC</h5>
                     <h6 className="col_brown mt-3 fst-italic">
-                      ₹ <span className="fs-1">501</span> monthly
+                    ₹ <span className="fs-1">501</span>
                     </h6>
                     <hr className="line mx-auto" />
+                    <h5>For Basic Members:</h5>
+                    <div className="text-start">
                     <ul>
-                      <li>Relaxing masage</li>
-                      <li className="mt-2">Manicure &amp; Pedicure</li>
-                      <li className="mt-2">Body Polish</li>
-                      <li className="mt-2">Relaxing masage</li>
-                      <li className="mt-2">Other Services</li>
+                      <li><i class="bi bi-check2-circle" style={{color:'green'}}></i> You Can See 50 Profiles</li>
+                      <li className="mt-2"><i class="bi bi-x-circle" style={{color:'red', fontSize:'16px'}}></i> You Can't See All Details Like Contact - Number & Email Address</li>
+                      <li><i class="bi bi-x-circle" style={{color:'red', fontSize:'16px'}}></i> You Can't Chat</li>
+                      <li><i class="bi bi-x-circle" style={{color:'red', fontSize:'16px'}}></i> You Can't Video Call</li>
+                      <li><i class="bi bi-x-circle" style={{color:'red', fontSize:'16px'}}></i> All Facilities Are Not Available</li>
+                      <li><i class="bi bi-x-circle" style={{color:'red', fontSize:'16px'}}></i> Both The Costumer Can't Exchange The Number Also</li>
                     </ul>
+                    </div>
                     <h6 className="mb-0 mt-4">
                       <a className="button_1" href="#">
-                        Read More
+                        Pay Now
                       </a>
                     </h6>
                   </div>
@@ -720,40 +724,48 @@ const Homepage = () => {
                   <div className="price_2i text-center shadow_box p-4 bg-white">
                     <h5 className="fw-normal">STANDARD</h5>
                     <h6 className="col_brown mt-3 fst-italic">
-                      ₹ <span className="fs-1">2100 </span> monthly
+                      ₹ <span className="fs-1">2100 </span>
                     </h6>
                     <hr className="line mx-auto" />
+                    <h5>For Standard Members:</h5>
+                    <div className="text-start">
                     <ul>
-                      <li>Relaxing masage</li>
-                      <li className="mt-2">Manicure &amp; Pedicure</li>
-                      <li className="mt-2">Body Polish</li>
-                      <li className="mt-2">Relaxing masage</li>
-                      <li className="mt-2">Other Services</li>
+                      <li><i class="bi bi-check2-circle" style={{color:'green'}}></i> You Can See Free 100 +  Profiles</li>
+                      <li className="mt-2"><i class="bi bi-check2-circle" style={{color:'green'}}></i> You Can See All Details Like Contact Number & Email Address</li>
+                      <li><i class="bi bi-x-circle" style={{color:'red', fontSize:'16px'}}></i> You Can't Chat</li>
+                      <li><i class="bi bi-x-circle" style={{color:'red', fontSize:'16px'}}></i> You Can't Video Call</li>
+                      <li><i class="bi bi-x-circle" style={{color:'red', fontSize:'16px'}}></i> All Facilities Are Not Available</li>
+                      <li><i class="bi bi-x-circle" style={{color:'red', fontSize:'16px'}}></i> Both The Costumer Can't Exchange The Number Also</li>
                     </ul>
+                    </div>
                     <h6 className="mb-0 mt-4">
                       <a className="button_1" href="#">
-                        Read More
+                        Pay Now
                       </a>
                     </h6>
                   </div>
                 </div>
                 <div className="col-md-4">
                   <div className="price_2i text-center shadow_box p-4 bg-white">
-                    <h5 className="fw-normal">High Class</h5>
+                    <h5 className="fw-normal">Advanced</h5>
                     <h6 className="col_brown mt-3 fst-italic">
                       ₹ <span className="fs-1">5100 </span> monthly
                     </h6>
                     <hr className="line mx-auto" />
+                    <h5>For Advanced Members:</h5>
+                    <div className="text-start">
                     <ul>
-                      <li>Relaxing masage</li>
-                      <li className="mt-2">Manicure &amp; Pedicure</li>
-                      <li className="mt-2">Body Polish</li>
-                      <li className="mt-2">Relaxing masage</li>
-                      <li className="mt-2">Other Services</li>
+                      <li><i class="bi bi-check2-circle" style={{color:'green'}}></i> You Can See Free Unlimited Profiles</li>
+                      <li className="mt-2"><i class="bi bi-check2-circle" style={{color:'green'}}></i> You Can See All Details Like Contact - Number & Email Address</li>
+                      <li><i class="bi bi-check2-circle" style={{color:'green'}}></i> You Can Chat</li>
+                      <li><i class="bi bi-check2-circle" style={{color:'green'}}></i> You Can Video Call</li>
+                      <li><i class="bi bi-check2-circle" style={{color:'green'}}></i> All Facilities Are Available</li>
+                      <li><i class="bi bi-check2-circle" style={{color:'green'}}></i> Both The Costumer Can Exchange The Number Also</li>
                     </ul>
+                    </div>
                     <h6 className="mb-0 mt-4">
                       <a className="button_1" href="#">
-                        Read More
+                        Pay Now
                       </a>
                     </h6>
                   </div>
