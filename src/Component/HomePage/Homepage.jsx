@@ -638,7 +638,7 @@ const Homepage = () => {
               <span className="col_brown icon_dove fs-2">
                 <i className="fa fa-dove" />
               </span>
-              <h1 className="font_50">Bridesmaids &amp; Groomsmen</h1>
+              <h1 className="font_50">Brides &amp; Grooms</h1>
             </div>
           </div>
           <div className="row bride_1">

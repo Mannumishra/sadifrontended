@@ -18,64 +18,64 @@ const Event = () => {
       console.log(error)
     }
   }
-  useEffect(()=>{
+  useEffect(() => {
     getNews()
-  },[])
+  }, [])
   return (
     <>
 
-<>
+      <>
 
-<section id="blog_h" className="p_3">
-        <div className="container-xl mt-5">
-          <div className="row story_1 text-center mb-4">
-            <div className="col-md-12">
-              <span className="col_brown icon_dove fs-2">
-                <i className="fa fa-dove" />
-              </span>
-              <h1 className="font_50">Latest Weddings  </h1>
+        <section id="blog_h" className="p_3">
+          <div className="container-xl mt-5">
+            <div className="row story_1 text-center mb-4">
+              <div className="col-md-12">
+                <span className="col_brown icon_dove fs-2">
+                  <i className="fa fa-dove" />
+                </span>
+                <h1 className="font_50">Latest Weddings  </h1>
+              </div>
             </div>
-          </div>
-          <div className="row blog_h1">
-            {
-              news.map((item, index) =>
-                <div className="col-md-4">
-                  <div className="blog_hm shadow_box">
-                    <div className="blog_hm1 position-relative">
-                      <div className="blog_hm1i">
-                        <div className="grid clearfix">
-                          <figure className="effect-jazz mb-0">
-                            <a href="#">
-                              <img src={item.image} className="w-100" alt="img25" />
-                            </a>
-                          </figure>
+            <div className="row blog_h1">
+              {
+                news.map((item, index) =>
+                  <div className="col-md-4">
+                    <div className="blog_hm shadow_box">
+                      <div className="blog_hm1 position-relative">
+                        <div className="blog_hm1i">
+                          <div className="grid clearfix">
+                            <figure className="effect-jazz mb-0">
+                              <a href="#">
+                                <img src={item.image} className="w-100" alt="img25" />
+                              </a>
+                            </figure>
+                          </div>
+                        </div>
+                        <div className="blog_hm1i1 p-3 position-absolute top-0">
+                          <h6 className="mb-0 d-inline-block bg_brown text-white p-2 px-3 text-center">
+                            <span className="fw-bold">{item.date}</span>
+                          </h6>
                         </div>
                       </div>
-                      <div className="blog_hm1i1 p-3 position-absolute top-0">
-                        <h6 className="mb-0 d-inline-block bg_brown text-white p-2 px-3 text-center">
-                          <span className="fw-bold">{item.date}</span>
-                        </h6>
+                      <div className="blog_hm2 p-4">
+                        <h4>
+                          <a href="#">
+                            {item.description}
+                          </a>
+                        </h4>
+                        <p>
+                          {item.subdescription}
+                        </p>
+
                       </div>
                     </div>
-                    <div className="blog_hm2 p-4">
-                      <h4>
-                        <a href="#">
-                          {item.description}
-                        </a>
-                      </h4>
-                      <p>
-                       {item.subdescription}
-                      </p>
-
-                    </div>
                   </div>
-                </div>
                 )
-            }
+              }
+            </div>
           </div>
-        </div>
-      </section>
-  {/* <div className="center_main position-relative">
+        </section>
+        {/* <div className="center_main position-relative">
     <section id="center" className="pt-5 pb-5 center_o bg_light">
       <div className="container-xl">
         <div className="row center_o1 text-center">
@@ -256,7 +256,7 @@ const Event = () => {
       </div>
     </div>
   </section> */}
-</>
+      </>
 
 
     </>
