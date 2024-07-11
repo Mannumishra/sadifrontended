@@ -19,7 +19,7 @@ const Footer = () => {
                       <i className="fa fa-heart me-1 col_brown" /> Sita Ram
                       <br />
                       <span className="family_2 fw-normal font_14 col_brown">
-                        Best Merrage Beuro
+                        Best Marriage Bureau 
                       </span>
                     </a>
                   </h1>
@@ -199,7 +199,7 @@ const Footer = () => {
               <div className="col-md-8">
                 <div className="footer_2l">
                   <p className="mb-0">
-                    © 2024 Sita Ram Best Merrage Beuro. All Rights Reserved |
+                    © 2024 Sita Ram Best Marriage Bureau . All Rights Reserved |
                     Design by
                     <a
                       className="col_brown fw-bold"

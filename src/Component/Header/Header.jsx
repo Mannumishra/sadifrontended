@@ -69,7 +69,7 @@ const Header = () => {
               <i className="fa fa-heart me-1 col_brown"></i> Sita Ram
               <br />
               <span className="family_2 fw-normal font_14 col_brown">
-                Best Merrage Beuro
+                Best Marriage Bureau 
               </span>
             </Link>
             <button
