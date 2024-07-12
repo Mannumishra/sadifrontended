@@ -1,8 +1,10 @@
 import React from "react";
 import "../Header/header.css";
 import { Link} from "react-router-dom";
+import logo from '../../Images/img/image.png'
 const Header = () => {
   const login = sessionStorage.getItem("login")
+
   
   // alert(login)
 
@@ -66,11 +68,12 @@ const Header = () => {
         >
           <div className="container-xl">
             <Link className="p-0 navbar-brand fw-bold me-0 family_1 col_red" to="/">
-              <i className="fa fa-heart me-1 col_brown"></i> Sita Ram
+              {/* <i className="fa fa-heart me-1 col_brown"></i> Sita Ram
               <br />
               <span className="family_2 fw-normal font_14 col_brown">
                 Best Marriage Bureau 
-              </span>
+              </span> */}
+              <img src={logo} alt="" style={{height:50}} />
             </Link>
             <button
               className="navbar-toggler"
