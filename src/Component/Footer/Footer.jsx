@@ -5,6 +5,7 @@ import footer3 from "../../Images/img/footer3.jpg";
 import footer4 from "../../Images/img/footer4.jpg";
 import footer5 from "../../Images/img/footer5.jpg";
 import footer6 from "../../Images/img/footer6.jpg";
+import footerlogo from '../../Images/img/image.png'
 const Footer = () => {
   return (
     <>
@@ -15,13 +16,14 @@ const Footer = () => {
               <div className="col-md-3">
                 <div className="footer_1i">
                   <h1 className="mb-3">
-                    <a className="family_1" href="index.html">
+                    {/* <a className="family_1" href="index.html">
                       <i className="fa fa-heart me-1 col_brown" /> Sita Ram
                       <br />
                       <span className="family_2 fw-normal font_14 col_brown">
                         Best Marriage Bureau 
                       </span>
-                    </a>
+                    </a> */}
+                    <img src={footerlogo} alt="" style={{height:100}} />
                   </h1>
                   <p className="fst-italic">
                    "Here love finds the perfect match"
