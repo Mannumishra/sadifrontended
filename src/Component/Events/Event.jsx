@@ -11,7 +11,7 @@ const Event = () => {
 
   const getNews = async () => {
     try {
-      let res = await axios.get("https://sadibackend.onrender.com/api/success")
+      let res = await axios.get("https://api.sitarammarriagebureau.com/api/success")
       console.log(res)
       setNews(res.data.data)
     } catch (error) {

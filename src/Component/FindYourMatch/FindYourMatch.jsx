@@ -5,10 +5,11 @@ import image23 from "../../Images/img/image23.png";
 
 const FindYourMatch = () => {
   const [bride, setBride] = useState([])
+  const login = sessionStorage.getItem("login")
 
   const getBride = async () => {
     try {
-      let res = await axios.get("https://sadibackend.onrender.com/api/user")
+      let res = await axios.get("https://api.sitarammarriagebureau.com/api/user")
       console.log(res)
       setBride(res.data.data)
     } catch (error) {
@@ -34,8 +35,8 @@ const FindYourMatch = () => {
             {
               bride.map((item, index) =>
                 <div className="col-md-4" key={index}>
-                <Link to={`/partner_detail/${item._id}`}>
-                
+                  <Link to={login ? `/partner_detail/${item._id}` : "/login"}>
+
                     <div className="bride_1i position-relative">
                       <div className="bride_1i1">
                         <img src={image23} alt="abc" className="w-100" />
@@ -54,8 +55,8 @@ const FindYourMatch = () => {
                         <h6 className="col_brown mb-0">{item.bridename}</h6>
                       </div>
                     </div>
-                
-                </Link>
+
+                  </Link>
                 </div>
               )
             }
