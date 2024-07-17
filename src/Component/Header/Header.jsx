@@ -6,10 +6,23 @@ import logo from '../../Images/img/image.png';
 const Header = () => {
   const login = sessionStorage.getItem("login");
   const [open, setOpen] = useState(false);
+  const [openIner, setOpenInner] = useState(false)
+
+  const handleOpenInnerActive = () => {
+    setOpenInner(!openIner)
+  }
+
+  const handleOpenDeActive = () => {
+    setOpenInner(false)
+  }
 
   const toggleMenu = () => {
     setOpen(!open);
   };
+
+  const toggleCloseMenu = () => {
+    setOpen(false)
+  }
 
   const logout = () => {
     sessionStorage.clear();
@@ -45,22 +58,22 @@ const Header = () => {
             >
               <ul className="navbar-nav ms-auto mb-0">
                 <li className="nav-item">
-                  <Link className="nav-link active" to="/">
+                  <Link onClick={toggleCloseMenu} className="nav-link active" to="/">
                     Home
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/find_your_match">
+                  <Link onClick={toggleCloseMenu} className="nav-link" to="/find_your_match">
                     Find Your Match
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/about">
+                  <Link onClick={toggleCloseMenu} className="nav-link" to="/about">
                     About
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/event">
+                  <Link onClick={toggleCloseMenu} className="nav-link" to="/event">
                     Events
                   </Link>
                 </li>
@@ -70,26 +83,27 @@ const Header = () => {
                     to="#"
                     id="navbarDropdown"
                     role="button"
-                    onClick={toggleMenu}
-                    aria-expanded={open ? "true" : "false"}
+                    onClick={handleOpenInnerActive}
+                    aria-expanded={openIner ? "true" : "false"}
+                    
                   >
                     Pages
                   </Link>
-                  <ul className={`dropdown-menu ${open ? 'show' : ''}`} aria-labelledby="navbarDropdown">
+                  <ul className={`dropdown-menu ${openIner ? 'show' : ''}`} aria-labelledby="navbarDropdown">
                     <li>
-                      <Link className="dropdown-item" to="/story">
+                      <Link onClick={toggleCloseMenu} className="dropdown-item" to="/story">
                         Story
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item border-0" to="/gallery">
+                      <Link onClick={toggleCloseMenu} className="dropdown-item border-0" to="/gallery">
                         Gallery
                       </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/contact">
+                  <Link onClick={toggleCloseMenu} className="nav-link" to="/contact">
                     Contact
                   </Link>
                 </li>
