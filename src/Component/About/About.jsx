@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css"
 import image50 from "../../Images/img/image50.jpg";
 import image51 from "../../Images/img/image51.jpg";
 import image21 from "../../Images/img/image21.jpg";
 
 const About = () => {
+  useEffect(()=>{
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })
+  },[])
   return (
     <>
       <div className="center_main position-relative">

@@ -18,6 +18,9 @@ import SignUp from "./Component/SignUp/SignUp";
 import Login from "./Component/Login/Login";
 import FindYourMatch from "./Component/FindYourMatch/FindYourMatch";
 import FindDetail from "./Component/FindYourMatch/FindDetail";
+import ReturnRefundPolicy from "./Component/ReturnRefundPolicy/ReturnRefundPolicy";
+import TermsAndConditions from "./Component/TermsConditions/TermsConditions";
+import PrivacyPolicy from "./Component/PrivacyPolicy/PrivacyPolicy";
 
 // import About from './Component/About/About'
 
@@ -42,6 +45,9 @@ const App = () => {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/returnpolicy" element={<ReturnRefundPolicy />} />
+          <Route path="/term" element={<TermsAndConditions />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import image2 from '../../Images/img/image2.jpg'
 import image12 from '../../Images/img/image12.jpg'
@@ -8,6 +8,12 @@ import image15 from '../../Images/img/image15.jpg'
 import image16 from '../../Images/img/image16.jpg'
 import image17 from '../../Images/img/image17.jpg'
 const EventDetails = () => {
+  useEffect(()=>{
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })
+  },[])
   return (
 
 <>
@@ -178,13 +184,13 @@ const EventDetails = () => {
                     <h6 className="family_2 font_14 mt-3  lh-base">
                       Email <br />
                       <span className="fw-normal text-muted">
-                        <a href="#">info@gmail.com</a>
+                        <a href="#">info@sitarammarriagebureau.com</a>
                       </span>
                     </h6>
                     <h6 className="family_2 font_14 mt-3 mb-0 lh-base">
                       Website <br />
                       <span className="fw-normal text-muted">
-                        <a href="#">info@gmail.com</a>
+                        <a href="#">info@sitarammarriagebureau.com</a>
                       </span>
                     </h6>
                   </div>
@@ -444,7 +450,7 @@ const EventDetails = () => {
                   <span>
                     <i className="fa fa-envelope col_brown me-3 align-middle fs-6" />
                   </span>
-                  <a href="#">info@gmail.com</a>
+                  <a href="#">info@sitarammarriagebureau.com</a>
                 </li>
                 <li className="d-flex mt-3">
                   <span>

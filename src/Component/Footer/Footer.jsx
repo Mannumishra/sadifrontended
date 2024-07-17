@@ -6,6 +6,7 @@ import footer4 from "../../Images/img/footer4.jpg";
 import footer5 from "../../Images/img/footer5.jpg";
 import footer6 from "../../Images/img/footer6.jpg";
 import footerlogo from '../../Images/img/image.png'
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
@@ -23,23 +24,21 @@ const Footer = () => {
                         Best Marriage Bureau 
                       </span>
                     </a> */}
-                    <img src={footerlogo} alt="" style={{height:100}} />
+                    <img src={footerlogo} alt="" style={{ height: 100 }} />
                   </h1>
                   <p className="fst-italic">
-                   "Here love finds the perfect match"
+                    "Here love finds the perfect match"
                   </p>
                   <ul className="mb-0">
                     <li>
-                      <a href="#">
-                        <i className="fa fa-envelope col_brown me-1 align-middle" />
-                        info@gmail.com
+                      <a href="mailto:info@sitarammarriagebureau.com" className="col_brown me-1 align-middle">
+                        <i className="fa fa-envelope" /> info@sitarammarriagebureau.com
                       </a>
+
                     </li>
                     <li className="mt-3">
-                      <a href="#">
-                        <i className="fa fa-phone col_brown me-1 align-middle" />
-                        + 91 8743901253 , 8168109705
-                      </a>
+                     
+
                     </li>
                     <li className="mt-3">
                       <i className="fa fa-home col_brown me-1 align-middle" />
@@ -50,55 +49,44 @@ const Footer = () => {
               </div>
               <div className="col-md-3">
                 <div className="footer_1i">
-                  <h5 className="mt-3 mb-4">WEDDING PLANNER FAQS</h5>
+                  <h5 className="mt-3 mb-4">QUICK LINKS</h5>
                   <ul className="mb-0">
                     <li>
-                      <a href="#">Why Hire a Planner?</a>
+                      <Link to="/about">About</Link>
                     </li>
                     <li className="mt-3">
-                      <a href="#">How Can I Make An Appointment?</a>
+                      <Link to="/find_your_match">Find Your Match</Link>
                     </li>
                     <li className="mt-3">
-                      <a href="#">How to Choose a Venue</a>
+                      <Link to="/event">Events</Link>
                     </li>
                     <li className="mt-3">
-                      <a href="#">Event Catalogue</a>
+                      <Link to="/contact">Contact</Link>
                     </li>
-                    <li className="mt-3">
-                      <a href="#">Payment Types You Accept</a>
-                    </li>
+                    {/* <li className="mt-3">
+                      <Link to="#">Payment Types You Accept</Link>
+                    </li> */}
                   </ul>
                 </div>
               </div>
               <div className="col-md-3">
                 <div className="footer_1i">
-                  <h5 className="mt-3 mb-4">ABOUT US</h5>
-                  <h6 className="family_2 font_14 fw-normal">BRIDESMAIDS</h6>
-                  <h6 className="fw-normal">
+                  <h5 className="mt-3 mb-4">OTHER POLICY LINKS </h5>
+                  <h6 className="family_2 font_14 fw-normal"><Link to='/returnpolicy'>RETURN & REFUND POLICY</Link></h6>
+                  {/* <h6 className="fw-normal">
                     <a className="col_brown" href="#">
                       <i className="fa fa-circle me-1 font_8 align-middle" />
                       November 22, 2017
                     </a>
-                  </h6>
-                  <h6 className="family_2 font_14 fw-normal mt-3">GROOMSMEN</h6>
-                  <h6 className="fw-normal">
-                    <a className="col_brown" href="#">
-                      <i className="fa fa-circle me-1 font_8 align-middle" />
-                      November 26, 2017
-                    </a>
-                  </h6>
-                  <h6 className="family_2 font_14 fw-normal mt-3">JEWELRY</h6>
-                  <h6 className="fw-normal mb-0">
-                    <a className="col_brown" href="#">
-                      <i className="fa fa-circle me-1 font_8 align-middle" />
-                      November 29, 2017
-                    </a>
-                  </h6>
+                  </h6> */}
+                  <h6 className="family_2 font_14 fw-normal mt-3"><Link to='/term'>TERM & CONDITIONS</Link></h6>
+                  <h6 className="family_2 font_14 fw-normal mt-3"><Link to='/privacy'>PRIVACY POLICY</Link></h6>
+
                 </div>
               </div>
               <div className="col-md-3">
                 <div className="footer_1i">
-                  <h5 className="mt-3 mb-4">INSTAGRAM</h5>
+                  <h5 className="mt-3 mb-4"></h5>
                   <div className="footer_1i1 row mx-0">
                     <div className="col-md-4 p-0">
                       <div className="footer_1i1l">
@@ -192,6 +180,51 @@ const Footer = () => {
                         </div>
                       </div>
                     </div>
+                    <div className="col-md-4 p-0">
+                      <div className="footer_1i1l">
+                        <div className="grid clearfix">
+                          <figure className="effect-jazz mb-0">
+                            <a href="#">
+                              <img
+                                src={footer6}
+                                className="w-100"
+                                alt="img25"
+                              />
+                            </a>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-4 p-0">
+                      <div className="footer_1i1l">
+                        <div className="grid clearfix">
+                          <figure className="effect-jazz mb-0">
+                            <a href="#">
+                              <img
+                                src={footer1}
+                                className="w-100"
+                                alt="img25"
+                              />
+                            </a>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-4 p-0">
+                      <div className="footer_1i1l">
+                        <div className="grid clearfix">
+                          <figure className="effect-jazz mb-0">
+                            <a href="#">
+                              <img
+                                src={footer4}
+                                className="w-100"
+                                alt="img25"
+                              />
+                            </a>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -212,23 +245,28 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-4">
-                <div className="footer_2r text-end">
-                  <ul className="text-uppercase font_13 mb-0">
-                    <li className="d-inline-block">
-                      <a href="#"> Facebook</a>
+              <div class="col-md-4">
+                <div class="top_1r text-end">
+                  <ul class="mb-0 d-flex justify-content-end gap-3">
+                    <li class="d-inline-block">
+                      <a class="d-inline-block  text-center text-white" href="https://www.facebook.com/people/Sita-Ram-Marriage-Bureau/pfbid02KL7dazEBsK65ME6B2fg78ATqb2aPKF8RiQFBQLSoLX65Q3KZi6b6p4m1B1aVjtBRl/?mibextid=ZbWKwL">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
                     </li>
-                    <li className="d-inline-block mx-2 text-muted">|</li>
-                    <li className="d-inline-block">
-                      <a href="#"> Twitter</a>
+                    <li class="d-inline-block">
+                      <a class="d-inline-block  text-center text-white" target="blank" href="https://www.instagram.com/mehndipur_balaji1008/?utm_source=qr&igsh=MjIwemo4ZWR6c3pi">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
                     </li>
-                    <li className="d-inline-block mx-2 text-muted">|</li>
-                    <li className="d-inline-block">
-                      <a href="#"> Pinterest</a>
+                    <li class="d-inline-block">
+                      <a class="d-inline-block  text-center text-white" href="#">
+                        <i class="fa-brands fa-pinterest"></i>
+                      </a>
                     </li>
-                    <li className="d-inline-block mx-2 text-muted">|</li>
-                    <li className="d-inline-block">
-                      <a href="#"> Instagram</a>
+                    <li class="d-inline-block">
+                      <a class="d-inline-block  text-center text-white" href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
                     </li>
                   </ul>
                 </div>

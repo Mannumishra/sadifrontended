@@ -1,7 +1,48 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 
 const Contact = () => {
+  const [loading,setLoading] = useState(false)
+  const [data,setData] = useState({
+    name:"",
+    email:"",
+    phone:"",
+    message:""
+  })
+
+  const getInputData = (e)=>{
+    const {name,value} = e.target 
+    setData({...data , [name]:value})
+  }
+  const postdata = async(e)=>{
+    setLoading(true)
+    e.preventDefault()
+    try {
+      let res = await axios.post("https://api.sitarammarriagebureau.com/api/contact" ,data)
+      if(res.status===200){
+        toast.success("Your Message send successfully")
+        setData({
+          name:"",
+          email:"",
+          phone:"",
+          message:""
+        })
+        setLoading(false)
+      }
+    } catch (error) {
+      setLoading(false)
+      console.log(error)
+    }
+  }
+  useEffect(()=>{
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })
+  },[])
   return (
+
     <>
       <>
         <div className="center_main position-relative">
@@ -81,7 +122,7 @@ const Contact = () => {
                   <hr />
                   <h6 className="mb-0">
                     <a className="col_brown" href="#">
-                      info@gmail.com
+                      info@sitarammarriagebureau.com
                     </a>
                   </h6>
                 </div>
@@ -124,7 +165,7 @@ const Contact = () => {
                         <h4>Call Or Email</h4>
                         <p className="mb-0">
                           +91 - +911244408859 <br />
-                          info@gmail.com
+                          info@sitarammarriagebureau.com
                         </p>
                       </div>
                     </div>
@@ -150,40 +191,48 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-7">
+            
+             <div className="col-md-7">
+             <form action="" onSubmit={postdata}>
                 <div className="contact_2r border_1 p-4">
                   <h4>Do You Have Any Questions?</h4>
                   <div className="row quote_2 mt-4">
-                    <div className="col-md-6">
+                    <div className="col-md-12">
                       <div className="quote_2l">
                         <input
                           placeholder="Name*"
                           className="form-control rounded-3"
                           type="text"
+                          name="name"
+                          onChange={getInputData}
                         />
                       </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-12 mt-4">
                       <div className="quote_2l">
                         <input
                           placeholder="Email*"
                           className="form-control rounded-3"
                           type="text"
+                          name="email"
+                          onChange={getInputData}
                         />
                       </div>
                     </div>
                   </div>
                   <div className="row quote_2 mt-4">
-                    <div className="col-md-6">
+                    <div className="col-md-12">
                       <div className="quote_2l">
                         <input
                           placeholder="Phone"
                           className="form-control rounded-3"
                           type="text"
+                          name="phone"
+                          onChange={getInputData}
                         />
                       </div>
                     </div>
-                    <div className="col-md-6">
+                    {/* <div className="col-md-6">
                       <div className="quote_2l">
                         <input
                           placeholder="Event"
@@ -191,9 +240,9 @@ const Contact = () => {
                           type="text"
                         />
                       </div>
-                    </div>
+                    </div> */}
                   </div>
-                  <div className="row quote_2 mt-4">
+                  {/* <div className="row quote_2 mt-4">
                     <div className="col-md-12">
                       <div className="quote_2l">
                         <input
@@ -203,7 +252,7 @@ const Contact = () => {
                         />
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="row quote_2 mt-4">
                     <div className="col-md-12">
                       <div className="quote_2l">
@@ -211,18 +260,19 @@ const Contact = () => {
                           placeholder="Write a Message"
                           className="form-control rounded-3 form_text"
                           defaultValue={""}
+                          name="message"
+                          onChange={getInputData}
                         />
-                        <h6 className="mt-4 mb-0">
-                          <a className="button_1 d-block text-center" href="#">
-                            
-                            Send A Message
-                          </a>
-                        </h6>
+          
+                           <button className="btn btn-dark mt-3"> {loading?"Waiting.." : "Send Message"}</button>
+                        
                       </div>
                     </div>
                   </div>
                 </div>
+                </form>
               </div>
+            
             </div>
             <div className="row contact_3 mt-5">
               <div className="col-md-12">

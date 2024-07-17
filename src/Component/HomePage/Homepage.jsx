@@ -44,6 +44,12 @@ const Homepage = () => {
     getBanner()
     getBride()
   }, [])
+  useEffect(()=>{
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })
+  },[])
   return (
     <>
       {/* carousel */}
@@ -714,9 +720,9 @@ const Homepage = () => {
                     </ul>
                     </div>
                     <h6 className="mb-0 mt-4">
-                      <a className="button_1" href="#">
+                      {/* <a className="button_1" href="#">
                         Pay Now
-                      </a>
+                      </a> */}
                     </h6>
                   </div>
                 </div>
@@ -739,9 +745,9 @@ const Homepage = () => {
                     </ul>
                     </div>
                     <h6 className="mb-0 mt-4">
-                      <a className="button_1" href="#">
+                      {/* <a className="button_1" href="#">
                         Pay Now
-                      </a>
+                      </a> */}
                     </h6>
                   </div>
                 </div>
@@ -764,9 +770,9 @@ const Homepage = () => {
                     </ul>
                     </div>
                     <h6 className="mb-0 mt-4">
-                      <a className="button_1" href="#">
+                      {/* <a className="button_1" href="#">
                         Pay Now
-                      </a>
+                      </a> */}
                     </h6>
                   </div>
                 </div>

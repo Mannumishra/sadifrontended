@@ -19,6 +19,12 @@ const FindYourMatch = () => {
   useEffect(() => {
     getBride()
   }, [])
+  useEffect(()=>{
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })
+  },[])
   return (
     <>
       <section id="bride" className="p_3">

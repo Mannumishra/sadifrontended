@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import image9 from "../../Images/img/image9.jpg";
 import image10 from "../../Images/img/image10.png";
 
 const Story = () => {
+  useEffect(()=>{
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })
+  },[])
   return (
     <>
       <section id="story" class="p_3">

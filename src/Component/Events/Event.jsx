@@ -21,6 +21,12 @@ const Event = () => {
   useEffect(() => {
     getNews()
   }, [])
+  useEffect(()=>{
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })
+  },[])
   return (
     <>
 

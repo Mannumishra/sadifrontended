@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import image12 from '../../Images/img/image12.jpg'
 import image15 from '../../Images/img/image15.jpg'
 import image16 from '../../Images/img/image16.jpg'
@@ -6,6 +6,12 @@ import image44 from '../../Images/img/image44.jpg'
 import image45 from '../../Images/img/image45.jpg'
 import image46 from '../../Images/img/image46.jpg'
 const Gallery = () => {
+  useEffect(()=>{
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })
+  },[])
   return (
     <>
       <>
