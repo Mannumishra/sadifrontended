@@ -164,7 +164,7 @@ const Contact = () => {
                       <div className="contact_2lir px-4">
                         <h4>Call Or Email</h4>
                         <p className="mb-0">
-                          +91 - +911244408859 <br />
+                        +91 8743901253 , 8168109705 <br />
                           info@sitarammarriagebureau.com
                         </p>
                       </div>
