@@ -897,6 +897,28 @@ a.socialIcon:hover,
 /*********************footer_end****************/
 
 @media screen and (max-width: 767px) {
+  .timeline > li.timeline-inverted {
+    padding-left: 0px;
+}
+  .timeline > li:not(.timeline-inverted) {
+    padding-right: 5px;
+}
+  .timeline > li > .timeline-panel {
+    width: 100%;
+  }
+  .timeline > li > .timeline-panel {
+    margin-top: 58px;
+    margin-right: -8px;
+  }
+  .timeline > li > .timeline-badge {
+    display: none;
+    margin-top: 54px;
+    margin-left: 92px;
+  }
+  .timeline:before {
+    margin-left: 30.5px;
+    display: none;
+  }
   .navbar-collapse {
     max-height: 500px;
     overflow-y: scroll;

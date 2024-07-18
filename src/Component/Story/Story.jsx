@@ -75,6 +75,9 @@ const Story = () => {
                   </div>
                 </li>
                 <li class="timeline-inverted">
+                <div class="timeline-badge " >
+                    <i class="fa fa-heart" style={{color:"#500F37"}}></i>
+                  </div>
                   <div class="timeline-panel">
                     <img alt="abc" class="w-100" src={image10} />
                   </div>

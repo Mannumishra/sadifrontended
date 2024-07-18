@@ -37,8 +37,10 @@ const Footer = () => {
 
                     </li>
                     <li className="mt-3">
-                     
-
+                    <i class="fa fa-phone me-1 align-middle col_dark"></i>
+                    <a href="tel:+918743901253,8168109705" className="" >
+                         +91 8743901253 , 8168109705
+                      </a>
                     </li>
                     <li className="mt-3">
                       <i className="fa fa-home col_brown me-1 align-middle" />
