@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import image23 from "../../Images/img/image23.png";
+import './find.css'
 
 const FindYourMatch = () => {
   const [bride, setBride] = useState([])
@@ -48,7 +49,7 @@ const FindYourMatch = () => {
                         <img src={image23} alt="abc" className="w-100" />
                       </div>
                       <div className="bride_1i2 text-center position-absolute top-0 w-100 h-100">
-                        <div className="about_h1l shadow_box p-3 rounded-circle">
+                        <div className=" height-fix about_h1l shadow_box p-3 rounded-circle">
                           <img
                             src={item.image}
                             alt="abc"
