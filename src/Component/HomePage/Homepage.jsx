@@ -16,6 +16,7 @@ import image46 from "../../Images/img/image46.jpg";
 import '../HomePage/homepage.css'
 import axios from "axios";
 import Event from "../Events/Event";
+import { Link } from "react-router-dom";
 const Homepage = () => {
   const [banner, setBanner] = useState([])
 
@@ -99,9 +100,9 @@ const Homepage = () => {
                       They are seeking a life partner who shares their zest for life, values mutual respect and understanding, and is ready to embark on an adventurous journey of love, growth, and companionship together.
                     </p>
                     <h6 className="mb-0 mt-4">
-                      <a className="button" href="#">
-                        We Can Help
-                      </a>
+                      <Link className="button" to="/signup">
+                        Join Us Now
+                      </Link>
                     </h6>
                   </div>
                 </div>

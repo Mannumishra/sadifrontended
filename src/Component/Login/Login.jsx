@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import image18 from "../../Images/img/image18.png";
 import axios from 'axios';
 import toast from 'react-hot-toast';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [data, setData] = useState({
@@ -10,33 +10,36 @@ const Login = () => {
     password: ""
   })
   const navigate = useNavigate()
+
   const getinputData = (e) => {
     const { name, value } = e.target
     setData({ ...data, [name]: value })
   }
+
   const postdata = async (e) => {
     e.preventDefault()
     try {
       const res = await axios.post("https://api.sitarammarriagebureau.com/api/user/login", data)
-      if(res.status===200){
-        sessionStorage.setItem("userid" , res.data.data._id)
-        sessionStorage.setItem("gender" , res.data.data.gender)
-        sessionStorage.setItem("name" , res.data.data.name)
-        sessionStorage.setItem("login" , true)
+      if (res.status === 200) {
+        sessionStorage.setItem("userid", res.data.data._id)
+        sessionStorage.setItem("gender", res.data.data.gender)
+        sessionStorage.setItem("name", res.data.data.name)
+        sessionStorage.setItem("login", true)
         toast.success("Login successfully......!!!")
-        window.location.href = '/'
+        navigate('/') // Use navigate instead of window.location.href
       }
     } catch (error) {
       console.log(error)
     }
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo({
-      top:0,
-      behavior:"smooth"
+      top: 0,
+      behavior: "smooth"
     })
-  },[])
+  }, [])
+
   return (
     <>
       <section id="attend" className="p_3">
@@ -53,7 +56,7 @@ const Login = () => {
                   <i className="fa fa-dove" />
                 </span>
                 <h1 className="font_30 mb-5 text-center">Login</h1>
-                <form action="" onSubmit={postdata}>
+                <form onSubmit={postdata}>
                   <input
                     className="form-control mt-3"
                     placeholder="Email"
@@ -69,11 +72,14 @@ const Login = () => {
                     onChange={getinputData}
                   />
                   <h6 className="mb-0 mt-4">
-                    <button className="button_1">
+                    <button className="button_1" type="submit">
                       Login
                     </button>
                   </h6>
                 </form>
+                <p className="mt-4 text-center">
+                  Don't have an account? <Link to="/signup"><u>Sign Up</u></Link>
+                </p>
               </div>
             </div>
             <div className="col-md-3">
@@ -84,8 +90,6 @@ const Login = () => {
           </div>
         </div>
       </section>
-
-
     </>
   )
 }
