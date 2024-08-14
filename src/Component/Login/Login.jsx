@@ -26,7 +26,7 @@ const Login = () => {
         sessionStorage.setItem("name", res.data.data.name)
         sessionStorage.setItem("login", true)
         toast.success("Login successfully......!!!")
-        navigate('/') // Use navigate instead of window.location.href
+        window.location.href='/' // Use navigate instead of window.location.href
       }
     } catch (error) {
       console.log(error)
