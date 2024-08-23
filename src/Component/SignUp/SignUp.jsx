@@ -77,7 +77,7 @@ const SignUp = () => {
     setLoding(true)
     try {
       let res = await axios.post(
-        "http://localhost:8000/api/user",
+        "https://api.sitarammarriagebureau.com/api/user",
         formData
       );
       console.log(res);
