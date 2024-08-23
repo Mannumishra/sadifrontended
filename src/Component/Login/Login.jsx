@@ -9,6 +9,7 @@ const Login = () => {
     email: "",
     password: ""
   })
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate()
 
   const getinputData = (e) => {
@@ -26,7 +27,7 @@ const Login = () => {
         sessionStorage.setItem("name", res.data.data.name)
         sessionStorage.setItem("login", true)
         toast.success("Login successfully......!!!")
-        window.location.href='/' // Use navigate instead of window.location.href
+        window.location.href = '/' // Use navigate instead of window.location.href
       }
     } catch (error) {
       console.log(error)
@@ -71,6 +72,14 @@ const Login = () => {
                     name='password'
                     onChange={getinputData}
                   />
+                  <div className="form-check mt-2">
+                    <input
+                      type="checkbox"
+                      id="showPassword"
+                      className="form-check-input"
+                      onChange={() => setShowPassword(!showPassword)}
+                    />
+                  </div>
                   <h6 className="mb-0 mt-4">
                     <button className="button_1" type="submit">
                       Login
@@ -88,8 +97,8 @@ const Login = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </div >
+      </section >
     </>
   )
 }

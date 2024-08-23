@@ -3,6 +3,7 @@ import axios from "axios";
 import "../SignUp/signUp.css";
 import toast from "react-hot-toast";
 const SignUp = () => {
+  const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoding] = useState(false)
   const [data, setData] = useState({
     name: "",
@@ -76,7 +77,7 @@ const SignUp = () => {
     setLoding(true)
     try {
       let res = await axios.post(
-        "https://api.sitarammarriagebureau.com/api/user",
+        "http://localhost:8000/api/user",
         formData
       );
       console.log(res);
@@ -86,7 +87,7 @@ const SignUp = () => {
       }
     } catch (error) {
       setLoding(false)
-      console.log("my error", error)
+      toast.error(error.response.data.message)
     }
   };
   useEffect(() => {
@@ -517,15 +518,25 @@ const SignUp = () => {
                       <sup className="text-danger">*</sup>
                     </span>
                   </label>
-
                   <input
-                    type="password"
+                    type={showPassword ? "text" : "password"}
                     name="password"
                     className="form-control"
                     onChange={getInputData}
                     placeholder="Password"
                     required
                   />
+                  <div className="form-check">
+                    <input
+                      type="checkbox"
+                      id="showPassword"
+                      className="form-check-input"
+                      onChange={() => setShowPassword(!showPassword)}
+                    />
+                    <label htmlFor="showPassword" className="form-check-label">
+                      Show Password
+                    </label>
+                  </div>
                   <p style={{ fontSize: 10, color: "red" }}>Your password must be at least 6 characters, include an uppercase letter, a number, and a special symbol.</p>
                 </div>
                 <div className="col-md-8 mb-2">
