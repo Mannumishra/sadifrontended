@@ -30,7 +30,7 @@ const Login = () => {
         window.location.href = "/"
       }
     } catch (error) {
-      console.log(error);
+      toast.error(error.respose.data.message)
     }
   };
 
