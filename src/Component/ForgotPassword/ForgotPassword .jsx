@@ -14,7 +14,7 @@ const ForgotPassword = () => {
 
     const handleSendOtp = async () => {
         try {
-            await axios.post('http://localhost:8000/api/user/send-otp', { email });
+            await axios.post('https://api.sitarammarriagebureau.com/api/user/send-otp', { email });
             setStep(2);
             toast.success('OTP sent to your email.');
         } catch (error) {
@@ -24,7 +24,7 @@ const ForgotPassword = () => {
 
     const handleVerifyOtp = async () => {
         try {
-            await axios.post('http://localhost:8000/api/user/verify-otp', { email, otp });
+            await axios.post('https://api.sitarammarriagebureau.com/api/user/verify-otp', { email, otp });
             setStep(3);
             toast.success('OTP verified. Please set a new password.');
         } catch (error) {
@@ -38,7 +38,7 @@ const ForgotPassword = () => {
             return;
         }
         try {
-            await axios.post('http://localhost:8000/api/user/reset-password', { email, password });
+            await axios.post('https://api.sitarammarriagebureau.com/api/user/reset-password', { email, password });
             toast.success('Password reset successfully.');
             navigate('/login');
         } catch (error) {
