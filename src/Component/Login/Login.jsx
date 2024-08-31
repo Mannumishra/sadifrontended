@@ -27,7 +27,7 @@ const Login = () => {
         sessionStorage.setItem("name", res.data.data.name);
         sessionStorage.setItem("login", true);
         toast.success("Login successfully......!!!");
-        window.location.href="/"
+        window.location.href = "/"
       }
     } catch (error) {
       console.log(error);
