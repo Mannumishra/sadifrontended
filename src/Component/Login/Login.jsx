@@ -45,15 +45,15 @@ const Login = () => {
     <>
       <section id="attend" className="p_3">
         <div className="container-xl">
-          <div className="row attend_1 text-center">
-            <div className="col-md-3">
+          <div className="row attend_1 ">
+            <div className="col-md-3 ">
               <div className="attend_1l">
                 <img src={image18} className="w-100" alt="abc" />
               </div>
             </div>
             <div className="col-md-6">
               <div className="attend_1m shadow_box formouter">
-                <span className="col_brown icon_dove fs-2">
+                <span className="col_brown icon_dove fs-2 text-center d-block">
                   <i className="fa fa-dove" />
                 </span>
                 <h1 className="font_30 mb-5 text-center">Login</h1>
@@ -74,21 +74,28 @@ const Login = () => {
                     onChange={getinputData}
                     value={data.password} // Added value attribute
                   />
-                  <div className="mt-2" style={{ float: "left" }}>
-                    <input
-                      type="checkbox"
-                      id="showPassword"
-                      className=""
-                      checked={showPassword} // Added checked attribute
-                      onChange={() => setShowPassword(!showPassword)}
-                    />
-                    <label htmlFor="showPassword">Show Password</label>
+                  <div className="">
+                    <div className="mt-2 text-left" >
+                      <input
+                        type="checkbox"
+                        id="showPassword"
+                        className=""
+                        checked={showPassword} // Added checked attribute
+                        onChange={() => setShowPassword(!showPassword)}
+                      />
+                      <label htmlFor="showPassword">Show Password</label>
+                    </div>
                   </div>
-                  <h6 className="mb-0 mt-4" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                    <button className="button_1" type="submit">
-                      Login
-                    </button>
-                  </h6>
+                  <div className="row">
+                    <div className="col-md text-center">
+                      <button className="button_1" type="submit" style={{ border: 'none' }}>
+                        Login
+                      </button>
+
+                    </div>
+                  </div>
+
+
                 </form>
                 <p className="mt-4 text-center">
                   Don't have an account? <Link to="/signup"><u>Sign Up</u></Link>
