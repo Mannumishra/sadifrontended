@@ -21,6 +21,7 @@ import FindDetail from "./Component/FindYourMatch/FindDetail";
 import ReturnRefundPolicy from "./Component/ReturnRefundPolicy/ReturnRefundPolicy";
 import TermsAndConditions from "./Component/TermsConditions/TermsConditions";
 import PrivacyPolicy from "./Component/PrivacyPolicy/PrivacyPolicy";
+import ForgotPassword from "./Component/ForgotPassword/ForgotPassword ";
 
 // import About from './Component/About/About'
 
@@ -48,6 +49,7 @@ const App = () => {
           <Route path="/returnpolicy" element={<ReturnRefundPolicy />} />
           <Route path="/term" element={<TermsAndConditions />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
         </Routes>
         <Footer />
       </BrowserRouter>
