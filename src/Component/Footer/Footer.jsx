@@ -251,12 +251,12 @@ const Footer = () => {
                 <div class="top_1r text-end">
                   <ul class="mb-0 d-flex justify-content-end gap-3">
                     <li class="d-inline-block">
-                      <a class="d-inline-block  text-center text-white" href="https://www.facebook.com/people/Sita-Ram-Marriage-Bureau/pfbid02KL7dazEBsK65ME6B2fg78ATqb2aPKF8RiQFBQLSoLX65Q3KZi6b6p4m1B1aVjtBRl/?mibextid=ZbWKwL">
+                      <a class="d-inline-block  text-center text-white"  target="_blank" href="https://www.facebook.com/people/Sita-Ram-Marriage-Bureau/pfbid02KL7dazEBsK65ME6B2fg78ATqb2aPKF8RiQFBQLSoLX65Q3KZi6b6p4m1B1aVjtBRl/?mibextid=ZbWKwL">
                         <i class="fa-brands fa-facebook"></i>
                       </a>
                     </li>
                     <li class="d-inline-block">
-                      <a class="d-inline-block  text-center text-white" target="blank" href="https://www.instagram.com/mehndipur_balaji1008/?utm_source=qr&igsh=MjIwemo4ZWR6c3pi">
+                      <a class="d-inline-block  text-center text-white"  target="_blank" href="https://www.instagram.com/mehndipur_balaji1008/?utm_source=qr&igsh=MjIwemo4ZWR6c3pi">
                         <i class="fa-brands fa-instagram"></i>
                       </a>
                     </li>
