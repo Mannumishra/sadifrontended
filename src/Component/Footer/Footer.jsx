@@ -37,9 +37,9 @@ const Footer = () => {
 
                     </li>
                     <li className="mt-3">
-                    <i class="fa fa-phone me-1 align-middle col_dark"></i>
-                    <a href="tel:+918743901253,8168109705" className="" >
-                         +91 8743901253 , 8168109705
+                      <i class="fa fa-phone me-1 align-middle col_dark"></i>
+                      <a href="tel:+918743901253,8168109705" className="" >
+                        +91 8743901253 , 8168109705
                       </a>
                     </li>
                     <li className="mt-3">
@@ -261,10 +261,11 @@ const Footer = () => {
                       </a>
                     </li>
                     <li class="d-inline-block">
-                      <a class="d-inline-block  text-center text-white" href="#">
-                        <i class="fa-brands fa-pinterest"></i>
+                      <a class="d-inline-block text-center text-white" href="https://youtube.com/shorts/KSJpbIx_DqU?si=r90IGDCr8eJk4-rY" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
                       </a>
                     </li>
+
                     <li class="d-inline-block">
                       <a class="d-inline-block  text-center text-white" href="#">
                         <i class="fa-brands fa-linkedin"></i>

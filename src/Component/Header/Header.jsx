@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <>
-     <section id="top" class="bg_brown pt-2 pb-2">
+      <section id="top" class="bg_brown pt-2 pb-2">
         <div class="container-xl">
           <div class="row top_1">
             <div class="col-md-6">
@@ -39,15 +39,15 @@ const Header = () => {
                 <ul class="mb-0 font_14">
                   <li class="text-white d-inline-block">
                     <i class="fa fa-phone me-1 align-middle col_dark"></i>
-                    <a href="tel:+918743901253,8168109705" className="" style={{color:"white"}}>
-                         +91 8743901253 , 8168109705
-                      </a>
+                    <a href="tel:+918743901253,8168109705" className="" style={{ color: "white" }}>
+                      +91 8743901253 , 8168109705
+                    </a>
                   </li>
                   <li class="text-white d-inline-block ms-3">
                     <i class="fa fa-envelope me-1 align-middle col_dark"></i>
-                    <a href="mailto:info@sitarammarriagebureau.com" className="" style={{color:"white"}}>
-                     info@sitarammarriagebureau.com
-                      </a>
+                    <a href="mailto:info@sitarammarriagebureau.com" className="" style={{ color: "white" }}>
+                      info@sitarammarriagebureau.com
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -66,10 +66,11 @@ const Header = () => {
                     </a>
                   </li>
                   <li class="d-inline-block">
-                    <a class="d-inline-block  text-center text-white" href="#">
-                      <i class="fa-brands fa-pinterest"></i>
+                    <a class="d-inline-block text-center text-white" href="https://youtube.com/shorts/KSJpbIx_DqU?si=r90IGDCr8eJk4-rY" target="_blank">
+                      <i class="fa-brands fa-youtube"></i>
                     </a>
                   </li>
+
                   <li class="d-inline-block">
                     <a class="d-inline-block  text-center text-white" href="#">
                       <i class="fa-brands fa-linkedin"></i>
@@ -132,7 +133,7 @@ const Header = () => {
                     role="button"
                     onClick={handleOpenInnerActive}
                     aria-expanded={openIner ? "true" : "false"}
-                    
+
                   >
                     Pages
                   </Link>
